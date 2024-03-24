@@ -1,14 +1,14 @@
-import ConstructionState from "@/components/construction-state";
+import Avatar from "@/components/avatar";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import {LogoutLink} from "@kinde-oss/kinde-auth-nextjs/components";
 
 export default function Dashboard() {
     return (
-      <main className="text-center">
-        <ConstructionState />
-        <Link href="/">
-            <Button>Go back</Button>
-        </Link>
+      <main className="flex items-center justify-center flex-col">
+        <Avatar />
+        <LogoutLink>
+            <Button>Log out</Button>
+        </LogoutLink>
       </main>
     );
   }
