@@ -1,10 +1,8 @@
 "use client";
 // import type { Metadata } from "next";
-import {KindeProvider} from "@kinde-oss/kinde-auth-nextjs";
+import { KindeProvider } from "@kinde-oss/kinde-auth-nextjs";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-
-
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -20,7 +18,7 @@ export default function RootLayout({
     <KindeProvider>
       <html lang="en">
         <body className="">
-          <Navbar />
+          <Navbar isLoggedIn={false} />
           {children}
         </body>
       </html>
